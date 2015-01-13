@@ -29,7 +29,7 @@ attachment_config = {
 
   styles: {
       mini:     "48x48>",
-      small:    "240x240>"
+      small:    "240x240>",
       product:  "600x600>",
       large:    "800x800>"
   },
