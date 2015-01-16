@@ -1,0 +1,19 @@
+ul.taxons-list {
+  list-style-type: none;
+}
+
+ul.taxons-list.primary
+{
+  text-transform: uppercase;
+  font-weight: bold;
+  line-height: 26px;
+}
+
+ul.taxons-list.secondary
+{
+  text-transform: none;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 20px;
+  padding-left: 10px; 
+}
