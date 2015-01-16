@@ -1,0 +1,26 @@
+<div class="container">
+  <nav class="columns sixteen">
+    <ul id="main-nav-bar" class="inline" data-hook>
+      <li id="home-link" data-hook><%= link_to Spree.t(:allset_kits), spree.root_path %></li>
+      <li id="search-bar" data-hook>
+        <%= render :partial => 'spree/shared/search' %>
+      </li>
+      <li id="link-to-cart" data-hook>
+        <noscript>
+          <%= link_to Spree.t(:my_cart), '/cart' %>
+        </noscript>
+        &nbsp;
+      </li>
+      <script>Spree.fetch_cart()</script>
+    </ul>
+  </nav>
+  <nav id='menu-nav-bar' class='columns sixteen'>
+    <ul class='inline'>
+      <li>Survival Kits</li>
+      <li>Food Storage</li>
+      <li>Emergency Supplies</li>
+      <li>Build a Survival Kit</li>
+      <!-- <li>Blog</li> -->
+    </ul>
+  </nav>
+</div>
