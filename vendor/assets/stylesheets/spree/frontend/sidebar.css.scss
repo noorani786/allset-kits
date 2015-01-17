@@ -23,6 +23,12 @@ ul.taxons-list.secondary
   text-transform: none;
   font-weight: normal;
   font-size: 12px;
-  line-height: 20px;
-  padding-left: 10px; 
+  line-height: 15px;
+  //padding-left: 10px; 
+  li {
+    margin: 7px 0px;
+  }
+  li:last-child {
+    margin-bottom: 20px;
+  }
 }
