@@ -1,0 +1,19 @@
+<% unless @taxon.children.empty? %>
+<h6>Refine Search</h6>
+<div class='clearfix'>
+  
+    <% @taxon.children.each do |t| %>
+      <div class='float-left' style="display: inline-block; margin: 5px 20px;"><%= t.name %></div>
+    <% end %>
+    <div class="float-left" style="display: inline-block; margin: 5px 20px;">T-Shirts</div>
+    <div class="float-left" style="display: inline-block; margin: 5px 20px;">T-Shirts</div>
+    <div class="float-left" style="display: inline-block; margin: 5px 20px;">T-Shirts</div>
+    <div class="float-left" style="display: inline-block; margin: 5px 20px;">T-Shirts</div>
+    <div class="float-left" style="display: inline-block; margin: 5px 20px;">T-Shirts</div>
+    <div class="float-left" style="display: inline-block; margin: 5px 20px;">T-Shirts</div>
+    <div class="float-left" style="display: inline-block; margin: 5px 20px;">T-Shirts</div>
+    <div class="float-left" style="display: inline-block; margin: 5px 20px;">T-Shirts</div>
+    <div class="float-left" style="display: inline-block; margin: 5px 20px;">T-Shirts</div>
+    
+</div>
+<% end %>
