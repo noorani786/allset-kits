@@ -1,58 +1,47 @@
-div#top-promo-message 
-{
-  text-align: center;
-  line-height: 40px;
-  .message {
-    font-size: 18px;
-    color: #98a440;
+
+header#header {
+  margin: 0px;
+  margin-top: 10px;
+  // text-transform: lowercase;
+}
+
+nav#top-nav-bar {
+  background: white;
+  background: url("/assets/header_bg.gif") repeat-x top left;
+  border-bottom: 1px solid #b50000;
+  color: #ffffff;
+  padding: 10px 0px 5px 0px;
+  margin: 0px;
+  font-size: 14px;
+  text-align: left;
+  
+  ul {
+    list-style: none;
+    margin: 0px;
+    li {
+      display: inline-block;
+      padding: 0px 20px;
+    }
+    .fa-shopping-cart {
+      font-size: 24px;
+      vertical-align: middle;
+    }
   }
 }
 
-nav#top-nav-bar, nav#menu-nav-bar {
-  width: 100%;
-  background: #254e7b 0 -133px;
-  border-bottom: 1px solid #14457b;
-  float: left;
+nav#breadcrumbs 
+{
+  border-bottom: none;
+  padding: 10px 0px;
   margin: 0px;
-  div#top-nav {
-    //width: 1002px;
-    margin: 0 auto;
-    //line-height: 3em;
-    ul#left-links {
-      float: left;
-    }
-    ul#right-links {
-      float: right;
-    }
-  }
-  ul {
-    position: relative;
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    top: 0;
-    right: 0;
-    border-left: 1px solid #15416f;
-    //border-width: 0 1px;
-    //border-style: solid;
-    //border-color: #15416f #3b6692 #3b6692 #15416f;
-    li{
-      display: inline-block;
-      color: #fff;
-      text-decoration: none;
-      font-weight: bold;
-      font: bold .8333em Verdana, helvetica, sans-serif;
-      border-width: 0 1px;
-      border-style: solid;
-      border-color:  #15416f #15416f #3b6692 #3b6692; //#15416f #15416f #15416f #15416f;
-      border-left: 0px;
-      text-indent: 0;
-      margin: 0px;
-      padding: 8px;
-      font-size: 12px;
+  width: 580px;
+  li {
+    span {
+      text-transform: lowercase;
     }
   }
 }
+
 
 nav #main-nav-bar {
   border: none;
@@ -72,13 +61,19 @@ nav#menu-nav-bar {
   }
 }
 
-li#search-bar {
+div#search-bar {
   display: inline-block;
-  margin-left: 50px;
+  margin-top: 5px;
   input#keywords {
-    width: 400px;
+    width: 250px;
     height: 30px;
-    font: italic 16px Georgia;
     padding: 1px 5px;
+    border: 1px solid #d2d2d2;
+    border-radius: 5px;
+  }
+  .fa-search {
+    font-size: 16px;
+    margin-left: -30px;
+    color: #646464;
   }
 }

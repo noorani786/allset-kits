@@ -1,6 +1,7 @@
 <%= form_tag spree.products_path, :method => :get do %>
 <div id="search-wrapper" class="pull-left">
-  <%= search_field_tag :keywords, params[:keywords], :placeholder => "Survival/Food Kits, Emergency Supplies, etc." %>
-  <%= submit_tag Spree.t(:search), :name => nil %>
+  <%= search_field_tag :keywords, params[:keywords], :placeholder => "search..." %>
+  <span class='fa fa-search'></span>
+    
 </div>
 <% end %>

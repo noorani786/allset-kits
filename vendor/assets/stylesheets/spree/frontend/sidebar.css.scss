@@ -10,31 +10,68 @@ div#wrapper {
 }
 
 aside#sidebar {
-  margin-left: 20px;
+  margin-left: 0px;
+  text-transform: lowercase;
+  h6.taxonomy-root {
+    background: #b50000;
+    color: #fff;
+    text-transform: lowercase;
+    padding: 10px;
+    margin: 0px;
+    margin-bottom: -1px;
+    -moz-box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.3);
+    box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.3);
+  }
 }
 
-ul.taxons-list {
-  list-style-type: none;
+ul.taxons-list {  
+  margin: 0;
+  margin-bottom: 20px;
+  padding-bottom: 0;
+ 
+  li {
+    background: url(/assets/left_menu_item_bg.jpg) repeat-x scroll 0 top #454545;
+    border: none;
+    display: block;
+    margin-top: 0;
+    text-align: left;
+    a {
+      color: #fff;
+      font-weight: bold;
+      background: url("../../../tga/images/newmenu-bg.png") no-repeat scroll right -351px;
+      font-size: 13px;
+      padding: 10px;
+      display: inline-block;
+      width: 100%;
+      text-decoration: none;
+    }
+  }
 }
 
 ul.taxons-list.primary
 {
-  text-transform: uppercase;
-  font-weight: bold;
-  line-height: 26px;
+  li {
+    background: url("/assets/header_bg.gif");
+    margin-bottom: 20px;
+    padding: 0px;
+  }
 }
 
 ul.taxons-list.secondary
 {
-  text-transform: none;
-  font-weight: normal;
-  font-size: 12px;
-  line-height: 15px;
-  //padding-left: 10px; 
+  background: #454545;
   li {
-    margin: 7px 0px;
-  }
-  li:last-child {
-    margin-bottom: 20px;
+    background: url(/assets/left_menu_item_bg.jpg) repeat-x scroll 0 top #454545;
+    border: none;
+    display: block;
+    margin: 0px;
+    text-align: left;
+    a {
+      background: url("../../../tga/images/newmenu-bg.png") no-repeat scroll right -351px;
+    }
+    &:hover {
+      background: #333;
+    }
   }
 }

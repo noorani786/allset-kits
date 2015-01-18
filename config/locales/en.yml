@@ -21,3 +21,5 @@
 
 en:
   hello: "Hello world"
+  spree:
+    shop_by_taxonomy: "Shop All %{taxonomy}"

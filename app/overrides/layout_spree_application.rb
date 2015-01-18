@@ -12,3 +12,10 @@ Deface::Override.new(
   :insert_before => "div.container",
   :partial => "spree/shared/header"
   )
+
+# remove breadcrumbs since it has been moved into header
+Deface::Override.new(
+  :virtual_path => "spree/layouts/spree_application",
+  :name => "layouts_spree_application_remove_breadcrumbs",
+  :remove => "erb[loud]:contains('breadcrumbs')"
+  )

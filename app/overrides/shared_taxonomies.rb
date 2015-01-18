@@ -4,3 +4,5 @@ Deface::Override.new(
   :name => "shared_taxonomies_hide_shopby",
   :remove => "h6"
   )
+
+# show only categories
